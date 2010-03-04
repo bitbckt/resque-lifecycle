@@ -4,6 +4,15 @@ Resque::Lifecycle extends Resque's default enqueueing process to add a simple ti
 each enqueued. This allows easy measurement of queue throughput by inspecting the creation time of the head
 element on the queue.
 
+== Usage
+
+  require 'resque'
+  require 'resque/lifecycle'
+
+  module Resque
+    include Resque::Lifecycle
+  end
+
 == Note on Patches/Pull Requests
  
 * Fork the project.
