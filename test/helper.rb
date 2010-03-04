@@ -6,5 +6,12 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'resque-lifecycle'
 
-class Test::Unit::TestCase
+module ResqueMock
+  extend self
+
+  def push(queue, item)
+    item
+  end
+
 end
+
