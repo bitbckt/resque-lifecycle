@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{resque-lifecycle}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["bitbckt"]
@@ -24,7 +24,9 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/resque-lifecycle.rb",
      "lib/resque/lifecycle.rb",
-     "test/helper.rb"
+     "resque-lifecycle.gemspec",
+     "test/helper.rb",
+     "test/test_lifecycle.rb"
   ]
   s.homepage = %q{http://github.com/bitbckt/resque-lifecycle}
   s.rdoc_options = ["--charset=UTF-8"]
