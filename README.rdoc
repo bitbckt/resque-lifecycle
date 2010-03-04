@@ -1,6 +1,8 @@
 = resque-lifecycle
 
-Description goes here.
+Resque::Lifecycle extends Resque's default enqueueing process to add a simple timestamp to the payload of
+each enqueued. This allows easy measurement of queue throughput by inspecting the creation time of the head
+element on the queue.
 
 == Note on Patches/Pull Requests
  
@@ -14,4 +16,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 bitbckt. See LICENSE for details.
+Copyright (c) 2010 Brandon Mitchell. See LICENSE for details.
