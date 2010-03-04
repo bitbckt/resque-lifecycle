@@ -1,8 +1,8 @@
 = resque-lifecycle
 
 Resque::Lifecycle extends Resque's default enqueueing process to add a simple timestamp to the payload of
-each enqueued. This allows easy measurement of queue throughput by inspecting the creation time of the head
-element on the queue.
+each enqueued job. This allows easy measurement of queue throughput by inspecting the creation time of the
+head element on the queue.
 
 == Usage
 
