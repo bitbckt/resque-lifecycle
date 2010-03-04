@@ -7,7 +7,7 @@ element on the queue.
 == Usage
 
   require 'resque'
-  require 'resque/lifecycle'
+  require 'resque-lifecycle'
 
   module Resque
     include Resque::Lifecycle
