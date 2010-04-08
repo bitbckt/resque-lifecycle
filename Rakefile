@@ -10,7 +10,7 @@ begin
     gem.homepage = "http://github.com/bitbckt/resque-lifecycle"
     gem.authors = ["bitbckt"]
     gem.add_development_dependency "shoulda", ">= 2.10"
-    gem.add_dependency "resque", "1.5.2"
+    gem.add_dependency "resque", "1.8.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
