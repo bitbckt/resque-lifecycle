@@ -44,14 +44,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<shoulda>, [">= 2.10"])
-      s.add_runtime_dependency(%q<resque>, ["= 1.5.2"])
+      s.add_runtime_dependency(%q<resque>)
     else
       s.add_dependency(%q<shoulda>, [">= 2.10"])
-      s.add_dependency(%q<resque>, ["= 1.5.2"])
+      s.add_dependency(%q<resque>)
     end
   else
     s.add_dependency(%q<shoulda>, [">= 2.10"])
-    s.add_dependency(%q<resque>, ["= 1.5.2"])
+    s.add_dependency(%q<resque>)
   end
 end
 
