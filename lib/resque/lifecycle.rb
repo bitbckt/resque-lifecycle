@@ -17,7 +17,8 @@ module Resque
       #
       def push(queue, item)
         if item.respond_to?(:[]=)
-          item[:created_at] = Time.now.to_i
+          exists = item.respond_to?(:[]) && item[:created_at]
+          item[:created_at] = Time.now.to_i unless exists
         end
         push_without_lifecycle queue, item
       end
