@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 name = "resque-lifecycle"
 
-Gem::Specification.new name, "0.1.1" do |s|
+Gem::Specification.new name, "0.1.2" do |s|
   s.summary = "Adds job lifecycle data to Resque payloads"
   s.authors = ["Michael Grosser", "bitbckt"]
   s.email = "michael@grosser.it"
