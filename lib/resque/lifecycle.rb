@@ -1,8 +1,6 @@
 module Resque
-
   module Lifecycle
-
-    def self.included(base) #:nodoc:
+    def self.included(base)
       base.class_eval do
         alias_method :push_without_lifecycle, :push
         extend ClassMethods
@@ -10,7 +8,6 @@ module Resque
     end
 
     module ClassMethods
-
       # Wrapper for the original Resque push method, which adds a
       # created_at timestamp to any +item+ pushed onto the queue which
       # responds to #[]=.
@@ -21,9 +18,6 @@ module Resque
         end
         push_without_lifecycle queue, item
       end
-
     end
-
   end
-
 end

@@ -1,9 +1,7 @@
-require 'rubygems'
-require 'test/unit'
-require 'shoulda'
+require 'minitest/autorun'
+require 'minitest/spec'
 
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-$LOAD_PATH.unshift(File.dirname(__FILE__))
+$LOAD_PATH.unshift File.expand_path "../../lib", __FILE__
 require 'resque-lifecycle'
 
 module ResqueMock
@@ -12,6 +10,5 @@ module ResqueMock
   def push(queue, item)
     item
   end
-
 end
 

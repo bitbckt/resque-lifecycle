@@ -4,15 +4,13 @@ module ResqueMock
   include Resque::Lifecycle
 end
 
-class LifecycleTest < Test::Unit::TestCase
-
-  should 'add created_at to items with #[]=' do
-    assert_not_nil ResqueMock.push('queue', { })[:created_at]
+describe Resque::Lifecycle do
+  it 'adds created_at to items with #[]=' do
+    ResqueMock.push('queue', { })[:created_at].wont_equal nil
   end
 
-  should 'not modify items missing #[]=' do
+  it 'does not modify items missing #[]=' do
     item = Object.new
-    assert_equal item.object_id, ResqueMock.push('queue', item).object_id
+    ResqueMock.push('queue', item).object_id.must_equal item.object_id
   end
-
 end

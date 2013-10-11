@@ -3,4 +3,4 @@ gemspec
 
 gem 'bump'
 gem 'rake'
-gem 'shoulda'
+gem 'minitest'
